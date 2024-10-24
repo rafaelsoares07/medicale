@@ -1,20 +1,25 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Button from './src/app/components/button/Button';
+import "./src/styles/global.css"
 
 export default function App() {
+
+  var nome = "rafael"
+  
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <View>
+            <Text className="text-red-500 text-6xl">Olá, {nome} tudo bem? ghghghgh</Text>
+
+            <Text className="text-red-500">Olá, {nome} tudo bem? ghghghgh</Text>
+
+            <Text className="text-red-500">Olá, {nome} tudo bem? ghghghgh</Text>
+
+      <Text className="text-red-500">Olá, {nome} tudo bem? ghghghgh</Text>
+      <Button text="Rafael ta bom?" />
       <StatusBar style="auto" />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
